@@ -54,15 +54,16 @@ export function getPokeById(id) {
     try {
       const response = await getPokes("https://pokeapi.co/api/v2/pokemon/" + id);
       console.log('response', response)
-
+      
       const abilities = response.abilities.map(async response => {
         const abilityInfo = await getAbility(response.ability.url);
-        const abilityEffect = abilityInfo.effect_entries.map(ability => {
-          if (ability.language.name == "en") {
-            return ability.effect;
-          }
-        });
-        return { name: response.ability.name, effect: abilityEffect};
+        return abilityInfo;
+        // const abilityEffect = abilityInfo.effect_entries.map(ability => {
+        //   if (ability.language.name == "en") {
+        //     return ability.effect;
+        //   }
+        // });
+        // return { name: response.ability.name, effect: abilityEffect};
       });
       console.log("abilities", abilities)
       
