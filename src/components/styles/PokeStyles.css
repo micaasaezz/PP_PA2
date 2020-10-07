@@ -1,0 +1,56 @@
+.titles {
+  text-align: center;
+}
+.poke-table {
+  height: 80%;
+  width: 60%;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+.poke-table-titles {
+  font-weight: bold !important;
+  font-size: large;
+  color: #3f51b5;
+}
+.poke-table-body {
+  padding: 3px 16px !important;
+}
+.route-buttons-style {
+  margin: 30px 15% !important;
+}
+.next-button-style {
+  margin: 30px 0px 30px 65% !important;
+}
+.previous-button-style {
+  margin: 30px 0px 30px 15% !important;
+}
+
+.card-poke-container {
+  width: 70%;
+  height: 60%;
+  margin: 50px auto;
+  text-align: center;
+}
+.card-poke-title {
+  font-size: 30px !important;
+  color: #3f51b5;
+}
+.card-back-button {
+  display: grid !important;
+  margin: 20px;
+}
+.poke-avatar {
+  width: 150px !important;
+  height: 150px !important;
+  margin: auto;
+}
+
+.not-found-error {
+  font-size: 40px;
+  color: red;
+}
+
+.items-per-page {
+  margin: 50px 35% 0px 30%;
+}
